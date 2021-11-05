@@ -1,0 +1,204 @@
+<ion-header>
+
+  <ion-toolbar >
+    
+
+    <ion-buttons slot="start">
+      <ion-button (click)="mostrarMenu()" color="primary">
+        <ion-icon slot="icon-only" name="menu-outline">
+
+        </ion-icon>
+         
+      </ion-button>
+    </ion-buttons>
+
+
+    
+   
+
+    <ion-buttons slot="end">
+      <ion-button href="/registro">
+        <ion-icon  slot="icon-only" name="add"></ion-icon>
+      </ion-button>
+      <ion-avatar>
+        <ion-img src="/assets/usuario.jpg"></ion-img>
+        
+        
+      </ion-avatar>
+    </ion-buttons>
+
+
+    
+
+    <ion-title >inicio</ion-title>
+  </ion-toolbar>
+  <ion-card class="fondo">
+    <ion-card-header  color="secondary">
+      
+  
+      <ion-card-content  class="ion-padding contenido">
+        
+        <ion-card-title class="titulo1">Bienvenid@ a Yapue</ion-card-title>
+        <hr>
+        
+        <a href="https://www.google.cl" target="_blank"><ion-img class="finicio" src="/assets/yapue.png"  ></ion-img></a>
+        
+        <ion-button fill="clear" expand="block" shape="round" size="small" color="dark" routerLink="/publicar">
+          Comprar
+          <ion-icon  slot="start" name="cash"></ion-icon>
+        </ion-button >
+  
+        <ion-button fill="clear" expand="full" shape="round" size="small" color="dark" routerLink="/publicar">
+          Vender
+          <ion-icon  slot="end" name="storefront"></ion-icon>
+        </ion-button >
+        
+      </ion-card-content>
+
+    </ion-card-header>
+    
+  </ion-card> 
+
+</ion-header>
+
+<ion-content >
+  
+
+  <ion-content  class="ion-padding">
+  
+    <ion-card >
+      <ion-card-header>
+    
+        <ion-card-subtitle class="subtitulo">YAPUE</ion-card-subtitle>
+        <ion-card-title class="titulo">Bienvenid@ a Yapue</ion-card-title>
+      </ion-card-header>
+      
+      <ion-card-content class="textcard">
+        Yapue es una plataforma de compra y venta, creada con la intención de ser amigable tanto el comprador como el vendedor.
+        ¿Como Así? En simples palabras, Yapue te ayuda a destacar tu anuncio garantizando una rápida compra, además nosotros nos "ponemos" con el envío.
+        tan solo una comisión fija del 2,5% independiente del monto.
+        <br>
+    
+        <a href="https://www.google.cl" target="_blank"><br><ion-img class="finicio" src="/assets/icon/compra.jpg" ></ion-img></a>
+      
+      </ion-card-content>
+    
+    </ion-card> 
+  
+     <!--
+     <ion-button routerLink="/alert">Alert</ion-button>
+     <ion-button routerLink="/action-sheet">Action Sheet</ion-button>-->
+     <ion-card>
+      <ion-item>
+        
+        <ion-label>Primera Transacción</ion-label>
+        <ion-button href="/inicio" fill="outline" size="small" slot="end">Prueba</ion-button>
+      </ion-item>
+    
+      <ion-card-content>
+        ¡10% de descuento en todos los productos! En tu primera Compra o venta, Tranquilo, no hay letra chica, nosotros cubrimos los gastos
+      </ion-card-content>
+    </ion-card>
+    
+    <ion-card>
+      <ion-item href="/inicio" class="ion-activated">
+        <ion-icon name="tv-outline" slot="start"></ion-icon>
+        <ion-label>Tecnología</ion-label>
+      </ion-item>
+    
+      <ion-item href="/inicio" class="ion-activated">
+        <ion-icon name="bed-outline" slot="start"></ion-icon>
+        <ion-label>Muebles</ion-label>
+      </ion-item>
+    
+      <ion-item href="/inicio" class="ion-activated">
+        <ion-icon name="phone-portrait" slot="start"></ion-icon>
+        <ion-label>Celulares</ion-label>
+      </ion-item>
+    
+      <ion-item href="/inicio" class="ion-activated">
+        <ion-icon name="print-outline" slot="start"></ion-icon>
+        <ion-label>Electrodomesticos</ion-label>
+      </ion-item>
+    
+
+    <ion-item href="/inicio" class="ion-activated">
+      <ion-icon name="construct-outline" slot="start"></ion-icon>
+      <ion-label>Construcción y Herramientas</ion-label>
+    </ion-item>
+
+    <ion-item href="/inicio" class="ion-activated">
+      <ion-icon name="game-controller-outline" slot="start"></ion-icon>
+      <ion-label>Consolas y Videojuegos</ion-label>
+    </ion-item>
+
+
+  </ion-card>
+
+  <ion-card href="/inicio" class="imgresp" color="light" class="cardresp">
+    <ion-img class="imgresp" src="/assets/iphone12.jpg"></ion-img>
+    <ion-card-header >
+      <ion-card-subtitle>$599.990  <br> 6 Cuotas Sin interés de 99.998</ion-card-subtitle>
+      <ion-card-title>iPhone 12 128GB</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content class="texto">
+      El iPhone 12 tiene una espectacular pantalla Super Retina XDR de 6.1 pulgadas.
+       Un frente de Ceramic Shield, cuatro veces más resistente a las caídas 
+      . Modo Noche en todas las cámaras, para que puedas tomar fotos increíbles con poca luz
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card href="/inicio" color="light">
+    <ion-img class="imagen"  src="/assets/tvlg.jpg"></ion-img>
+    <ion-card-header >
+      <ion-card-subtitle>$999.999  <br> 6 Cuotas Sin interés de $166.665</ion-card-subtitle>
+      <ion-card-title>LG Oled C1 55 Pulgadas</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content class="texto">
+      ILUMINA TU MUNDO con los PÍXELES AUTOILUMINADOS
+      El televisor LG OLED es un placer para la vista. Los píxeles autoiluminados permiten una calidad de imagen realmente espectacular 
+      y toda una serie de posibilidades de diseño
+    </ion-card-content>
+  </ion-card>
+
+
+  <ion-card href="/inicio" color="light">
+    <ion-img class="imagen"  src="/assets/taladro.jpg"></ion-img>
+    <ion-card-header >
+      <ion-card-subtitle>$75.000  <br> 6 Cuotas Sin interés de $12.500</ion-card-subtitle>
+      <ion-card-title>Taladro Percutor Bauker 600w</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content class="texto">
+      El Taladro percutor Bauker posee un potente motor de 600W, 
+      viene en una práctica maleta y además incluye 75 accesorios. Es perfecto para las tareas de maestranza.
+    </ion-card-content>
+  </ion-card>
+  
+  
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button href="/inicio">
+      <ion-icon name="help"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+
+
+</ion-content>
+  
+  <!--<ion-list>
+    <ion-item *ngFor="let c of componentes"
+        [routerLink] = "c.redirecTo"
+        detail="true">
+        <ion-icon [name]="c.icon" slot="start" color="primary">
+
+        </ion-icon>
+        {{c.name}}
+      
+      </ion-item>
+  </ion-list>
+  -->
+
+

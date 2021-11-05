@@ -1,0 +1,40 @@
+<ion-header >
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="Volver" color="primary" mode="ios">
+
+
+      </ion-back-button>
+    </ion-buttons>
+    
+    <ion-title>
+      Iniciar Sesión 
+    </ion-title>
+    
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-item>
+    <ion-label class="font" position="floating">Email</ion-label>
+    <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label class="font" position="floating">Password</ion-label>
+    <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+  </ion-item>
+  
+  <ion-item-divider>
+    <ion-button color="primary"   expand="block" slot="start" shape="round"  (click)="onLogin()" >
+      Inicia Sesión
+    </ion-button>
+    
+   
+  </ion-item-divider>
+  <ion-item-divider>
+  <ion-button color="primary" size="small"  expand="full" slot="start" shape="round" routerLink="/registro">
+    Registrarse
+  </ion-button>
+</ion-item-divider>
+</ion-content>
+

@@ -1,0 +1,69 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button 
+          defaultHref="/"
+          text="Back"
+          color="primary"
+          mode="ios"></ion-back-button>
+  </ion-buttons>
+    <ion-title>
+      Datos 
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="fixed">Nombre</ion-label>
+    <ion-input type="text" [(ngModel)]="newDato.nombre" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="fixed">Apellido</ion-label>
+    <ion-input type="text" [(ngModel)]="newDato.apellido" required></ion-input>
+  </ion-item>
+  
+  <ion-item>
+    <ion-label position="fixed">Edad</ion-label>
+    <ion-input type="number" [(ngModel)]="newDato.edad" required></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="fixed">Contraseña</ion-label>
+    <ion-input type="password" [(ngModel)]="newDato.password" required></ion-input>
+  </ion-item>
+  
+
+  <ion-button  expand="full" (click)="addDatos()" >
+    Agregar datos
+  </ion-button>
+  <ion-button  expand="full" (click)="getDatos" >
+    Login
+  </ion-button>
+
+  <ion-list #myList>
+    <ion-list-header>
+      <ion-label>Mis Datos</ion-label>
+    </ion-list-header>
+
+    <ion-list>
+      <ion-item-sliding *ngFor="let dato of datos">
+        <ion-item>
+          <ion-label text-wrap> 
+            <h3>{{dato.nombre}}</h3>
+            <ion-text color="secondary">
+              <p>{{dato.apellido}}</p>
+            </ion-text>
+            <p>{{dato.modified | date: 'short'}}</p>
+          </ion-label>
+        </ion-item>
+        <ion-item-options side="end">
+          <ion-item-option color="secondary" (click)="updateDatos(dato)">Actualizar</ion-item-option>
+         
+         <ion-item-option color="danger" (click)="deleteDatos(dato)">Eliminar</ion-item-option> 
+        </ion-item-options>
+      </ion-item-sliding>
+    </ion-list>
+  </ion-list>
+</ion-content>
+

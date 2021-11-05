@@ -1,0 +1,110 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/" text="Volver" color="primary" mode="ios">
+
+
+      </ion-back-button>
+    </ion-buttons>
+    <ion-title>Compra/Venta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label position="floating">Nombre del Articulo</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <br>
+  <ion-item>
+    <ion-label position="floating">Categoria</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <br>
+  <ion-item>
+    <ion-label position="floating">Usado o Nuevo</ion-label>
+    <ion-input></ion-input>
+  </ion-item>
+  <br>
+
+  <ion-item>
+    <ion-label>Stock Disponible</ion-label>
+    <ion-input type="number" value="1" min=1 max=20></ion-input>
+    
+      
+      
+    
+  </ion-item>
+  <br>
+  <ion-list>
+    <ion-radio-group value="biff">
+      <ion-list-header>
+        <ion-label>Estado</ion-label>
+      </ion-list-header>
+  
+      <ion-item>
+        <ion-label>Nuevo</ion-label>
+        <ion-radio slot="start" value="biff"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Usado</ion-label>
+        <ion-radio slot="start" value="griff"></ion-radio>
+      </ion-item>
+  
+      <ion-item>
+        <ion-label>Reacondicionado</ion-label>
+        <ion-radio slot="start" value="buford"></ion-radio>
+      </ion-item>
+    </ion-radio-group>
+  </ion-list>
+  
+
+ 
+ 
+  
+
+
+  <!-- Input with placeholder -->
+<ion-input placeholder="Enter Input"></ion-input>
+
+<!-- Input with clear button when there is a value -->
+<ion-input clearInput value="clear me"></ion-input>
+
+<!-- Number type input -->
+<ion-input type="number" value="333"></ion-input>
+
+<!-- Disabled input -->
+<ion-input value="Disabled" disabled></ion-input>
+
+<!-- Readonly input -->
+<ion-input value="Readonly" readonly></ion-input>
+
+<!-- Inputs with labels -->
+<ion-item>
+  <ion-label>Default Label</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="floating">Floating Label</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="fixed">Fixed Label</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+
+<ion-item>
+  <ion-label position="stacked">Stacked Label</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+<ion-button expand="block" color="secondary" href="#">Publicar</ion-button>
+<ion-fab vertical="bottom" horizontal="end" slot="fixed">
+  <ion-fab-button href="#">
+    <ion-icon name="help"></ion-icon>
+  </ion-fab-button>
+</ion-fab>
+
+</ion-content>

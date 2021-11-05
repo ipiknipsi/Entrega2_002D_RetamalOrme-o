@@ -1,0 +1,44 @@
+<ion-header>
+  <ion-toolbar >
+    <ion-buttons slot="start">
+      <ion-back-button 
+          defaultHref="/"
+          text="Back"
+          color="primary"
+          mode="ios"></ion-back-button>
+  </ion-buttons>
+    <ion-title>Feriados de Chile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <ion-card-content class="background">
+    En Yapue respetamos todos los feriados a nuestros trabajadores, velamos por el bienestar mental de ellos, dicho esto, sus compras y/o ventas
+     seguirán realizandose de manera correcta, solo que el despacho no realizará en días festivos, a continuación le dejamos el listado éstos.
+  </ion-card-content>
+  <ion-grid fixed>
+    <ion-row>
+      <ion-col size="12" size-lg="4" size-md="4" size-sm="4" size-xs="12"
+                *ngFor ="let data of datas; let i= index">
+          <ion-card >
+            <ion-card-header>
+              <ion-card-subtitle>
+                  <span class="text">{{i + 1 }}.</span>
+                  <span class="feriado-name">{{data.title}} </span>
+              </ion-card-subtitle>
+              <ion-card-title>{{data.date}}</ion-card-title>
+              
+            </ion-card-header>    
+            
+            
+            <ion-card-content>
+              <p class="feriado-name" >
+                Tipo: {{data.extra}}
+              </p>
+            </ion-card-content>          
+          </ion-card>
+      </ion-col>  
+    </ion-row>
+  </ion-grid>
+</ion-content>
+
